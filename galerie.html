@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Galerie - Kogë</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Kogë</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="galerie.html">Galerie</a>
+            <a href="histoire.html">Histoire de l'Art</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Galerie</h2>
+        <div class="gallery">
+            <img src="images/dessin1.png" alt="Dessin 1" onclick="openLightbox(0)">
+            <img src="images/dessin2.png" alt="Dessin 2" onclick="openLightbox(1)">
+            <img src="images/dessin3.png" alt="Dessin 3" onclick="openLightbox(2)">
+            <h2>Photo Peinture Num.</h2>
+            <img src="images/dessin4.png" alt="Dessin 4" onclick="openLightbox(3)">
+            <img src="images/dessin4-BIS.png" alt="Dessin 4-BIS" onclick="openLightbox(4)">
+            <img src="images/dessin5.png" alt="Dessin 5" onclick="openLightbox(5)">
+            <img src="images/dessin6.png" alt="Dessin 6" onclick="openLightbox(6)">
+            <img src="images/dessin6-BIS.png" alt="Dessin 6-BIS" onclick="openLightbox(7)">
+            <h2>Suite de la galerie.</h2>
+            <img src="images/dessin7.png" alt="Dessin 7" onclick="openLightbox(8)">
+            <img src="images/dessin8.png" alt="Dessin 8" onclick="openLightbox(9)">
+            <img src="images/dessin9.png" alt="Dessin 9" onclick="openLightbox(10)">
+        </div>
+    </main>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <img class="lightbox-img" id="lightbox-img">
+        <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+        <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
